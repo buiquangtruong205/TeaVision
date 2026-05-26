@@ -1,0 +1,15 @@
+{
+  "dataset_dir": "dataset",
+  "total_images": 5867,
+  "valid_images": 5867,
+  "corrupted_images": 0,
+  "small_images": 0,
+  "exact_duplicates": 0,
+  "phash_duplicates": 11,
+  "clean_images": 5856,
+  "clean_train_size": 4098,
+  "clean_val_size": 879,
+  "clean_test_size": 879,
+  "min_size": 32,
+  "moved_corrupted": []
+}

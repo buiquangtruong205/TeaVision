@@ -1,0 +1,29 @@
+project:
+  name: tea-disease-project
+  seed: 42
+
+paths:
+  raw_data: data/dataset
+  processed_data: data/processed
+  splits: data/splits
+  models: models
+  reports: reports
+  logs: logs
+
+data:
+  image_size: 224
+  batch_size: 32
+  num_workers: 4
+  val_size: 0.15
+  test_size: 0.15
+
+training:
+  model_name: efficientnet_b0
+  num_epochs: 20
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+  early_stopping_patience: 5
+
+mlflow:
+  tracking_uri: experiments/mlruns
+  experiment_name: tea-disease-classification

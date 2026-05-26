@@ -1,0 +1,25 @@
+{
+  "dataset_dir": "dataset",
+  "num_classes": 6,
+  "num_images": 5867,
+  "num_valid_images": 5867,
+  "num_invalid_images": 0,
+  "train_size": 4106,
+  "val_size": 880,
+  "test_size": 881,
+  "image_size": 224,
+  "mean": [
+    0.7207183503810256,
+    0.7151803354032578,
+    0.7222293077733918
+  ],
+  "std": [
+    0.27952969207981343,
+    0.2608117153655436,
+    0.33852272073983386
+  ],
+  "duplicates": {
+    "exact_duplicates": 0,
+    "near_duplicates": 22
+  }
+}

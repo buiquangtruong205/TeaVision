@@ -1,0 +1,12 @@
+image_path,label,class_name,width,height,file_size,is_valid,is_small,is_exact_duplicate,is_phash_duplicate,error,file_hash,phash
+dataset/brown_blight/image_0_2671.jpg,1,brown_blight,256,256,6184,True,False,False,True,,ebcf5c6af5a43d88077096af3f2ead12bb3029d2e4f18858e59e7d9038bf19d9,e8b5974a25548adb
+dataset/brown_blight/image_0_3920.jpg,1,brown_blight,256,256,5259,True,False,False,True,,f170fb72add51baab839f3727112820f624c57dbcc7d812a828cf8ddcb75fc58,e990ce67964e9349
+dataset/healthy/image_0_1784.jpg,3,healthy,256,256,5330,True,False,False,True,,a74881535c4a70e7956477112a25c50f24408ac0aee049b47a445129a5c62045,eac0953d6af0258f
+dataset/healthy/image_0_3430.jpg,3,healthy,256,256,5726,True,False,False,True,,a46897d4c5690f3ecb0bace580ce1056efb63ba261d109475671890ad0f493e0,fa95c360b41e3399
+dataset/helopeltis/20220101_095547.jpg,4,helopeltis,256,256,5482,True,False,False,True,,e8da1e8c25dd79d1ce60e7aa92b4491b944321f244855e6263497e90f0a52f15,fac0953f4a70258f
+dataset/helopeltis/20220101_120854.jpg,4,helopeltis,256,256,5611,True,False,False,True,,61088b878a658e8e0f787d7600b30862989570333256cc0aae24f875b5e8e62b,ff80c03d2be0b48f
+dataset/helopeltis/image_0_1578.jpg,4,helopeltis,256,256,4869,True,False,False,True,,10fba08a45efd5fe088e1a13b1e9bd26e79ea664b453d86e73e15ec94a23b235,eac2953d6ac2a59c
+dataset/helopeltis/image_0_1669.jpg,4,helopeltis,256,256,4491,True,False,False,True,,9c1e3671f49d2276a7021bc278b138ccc273d9c9713363ed2c447c681cfcca3d,f2cc993366cc1993
+dataset/red_spot/20211227_161557.jpg,5,red_spot,256,256,4663,True,False,False,True,,3e2779b7eb1ebe81d429bf48dd4c4753a6aaa3cdf5b8aa32d0bff42fdb9056c8,ea94856a7e85e09e
+dataset/red_spot/20211227_161727.jpg,5,red_spot,256,256,5138,True,False,False,True,,70c263c7573b1f6f424fb410f93229129fa577f8558b6aa70d921e9e7ed08ee2,ff80c03d2be0b48f
+dataset/red_spot/image_0_1714.jpg,5,red_spot,256,256,5069,True,False,False,True,,48db0100688e4612403168004861392f04550ebbcecd35872d0bba7cee42a6b7,e9c3963c616366cc

@@ -1,0 +1,28 @@
+name: tea-disease-project
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - scipy
+  - seaborn
+  - pytorch
+  - torchvision
+  - pip:
+      - albumentations
+      - dvc
+      - fastapi
+      - mlflow
+      - onnx
+      - onnxruntime
+      - opencv-python
+      - optuna
+      - Pillow
+      - pytest
+      - python-multipart
+      - uvicorn
