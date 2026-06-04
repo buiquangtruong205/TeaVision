@@ -1,0 +1,2 @@
+normalizer,model,accuracy,precision_macro,recall_macro,f1_macro,precision_weighted,recall_weighted,f1_weighted,parameters,gflops,inference_time_ms
+zscore,cnn,0.83875,0.8347545209197147,0.8358519554052609,0.8333433995647422,0.8410748971210947,0.83875,0.8379176240451558,2121638,0.093849088,2.2407013749989346

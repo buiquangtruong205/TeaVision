@@ -1,0 +1,17 @@
+{
+  "selection_metric": "validation_f1_macro",
+  "normalizer": "zscore",
+  "model": "cnn",
+  "image_size": 128,
+  "cnn_batch_size": 64,
+  "cnn_epochs": 60,
+  "cnn_patience": 8,
+  "cnn_learning_rate": 0.001,
+  "cnn_weight_decay": 0.0001,
+  "cnn_dropout": 0.5,
+  "cnn_label_smoothing": 0.0,
+  "cnn_lr_factor": 0.5,
+  "cnn_lr_patience": 2,
+  "validation_accuracy": 0.3333333333333333,
+  "validation_f1_macro": 0.2222222222222222
+}

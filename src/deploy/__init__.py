@@ -1,1 +1,1 @@
-"""Deployment utilities."""
+"""Deployment interfaces for TeaVision."""

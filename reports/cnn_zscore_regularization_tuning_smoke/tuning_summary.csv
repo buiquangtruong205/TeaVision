@@ -1,0 +1,6 @@
+config_name,image_size,cnn_batch_size,cnn_epochs,cnn_patience,cnn_learning_rate,cnn_weight_decay,cnn_dropout,cnn_label_smoothing,cnn_lr_factor,cnn_lr_patience,normalizer,model,accuracy,precision_macro,recall_macro,f1_macro,precision_weighted,recall_weighted,f1_weighted,parameters,gflops,inference_time_ms
+dropout05_wd1e4,128,64,60,8,0.001,0.0001,0.5,0.0,0.5,2,zscore,cnn,0.3333333333333333,0.1666666666666666,0.3333333333333333,0.2222222222222222,0.1666666666666666,0.3333333333333333,0.2222222222222222,2121638,0.093849088,2.413866666756803
+baseline,128,64,60,8,0.001,0.0,0.0,0.0,1.0,2,zscore,cnn,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2121638,0.093849088,2.086333333257547
+dropout03_wd1e4,128,64,60,8,0.001,0.0001,0.3,0.0,0.5,2,zscore,cnn,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2121638,0.093849088,2.042983333012671
+lr5e4_drop03_smooth05,128,64,60,10,0.0005,0.0001,0.3,0.05,0.5,2,zscore,cnn,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2121638,0.093849088,2.728649999577707
+lr3e4_drop03_smooth05,128,64,60,10,0.0003,0.0001,0.3,0.05,0.5,2,zscore,cnn,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2121638,0.093849088,3.124250000231162

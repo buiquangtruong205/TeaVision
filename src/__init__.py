@@ -1,1 +1,1 @@
-"""TeaVision source package."""
+"""TeaVision application package."""

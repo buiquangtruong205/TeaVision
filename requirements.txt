@@ -13,9 +13,11 @@ pandas
 Pillow
 pytest
 python-multipart
+PyYAML
 scikit-learn
 scipy
 seaborn
 torch
 torchvision
 uvicorn
+xgboost

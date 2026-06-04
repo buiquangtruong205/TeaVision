@@ -1,15 +1,36 @@
 {
-  "dataset_dir": "dataset",
-  "total_images": 5867,
-  "valid_images": 5867,
+  "dataset_dir": "data\\dataset",
+  "total_images": 6854,
+  "valid_images": 6854,
   "corrupted_images": 0,
   "small_images": 0,
-  "exact_duplicates": 0,
-  "phash_duplicates": 11,
-  "clean_images": 5856,
-  "clean_train_size": 4098,
-  "clean_val_size": 879,
-  "clean_test_size": 879,
+  "exact_duplicates": 987,
+  "phash_duplicates": 998,
+  "blurry_images": 305,
+  "too_dark_images": 0,
+  "too_bright_images": 400,
+  "low_contrast_images": 2,
+  "low_quality_images": 682,
+  "clean_images": 5330,
+  "clean_train_size": 3730,
+  "clean_val_size": 800,
+  "clean_test_size": 800,
+  "image_size": 224,
+  "mean": [
+    0.7106384931563183,
+    0.7042130995039385,
+    0.7148111907542388
+  ],
+  "std": [
+    0.2802576240661145,
+    0.2607969792152289,
+    0.3392890280350243
+  ],
   "min_size": 32,
-  "moved_corrupted": []
+  "blur_threshold": 80.0,
+  "dark_threshold": 40.0,
+  "bright_threshold": 220.0,
+  "contrast_threshold": 25.0,
+  "moved_corrupted": [],
+  "initial_tsne": "reports\\figures\\initial_tsne.png"
 }

@@ -1,0 +1,3 @@
+image_path,label,class_name,width,height,file_size,is_valid,is_small,is_exact_duplicate,is_phash_duplicate,blur_score,brightness_mean,contrast_std,is_blurry,is_too_dark,is_too_bright,is_low_contrast,is_low_quality,error,file_hash,phash
+data/dataset/red_spot/20211227_161533 - Copy.jpg,5,red_spot,256,256,3112,True,False,False,False,38.159285984700546,151.70420837402344,23.208397535726306,True,False,False,True,True,,e07d97b275526ab4d1b53f9ec0d0906dc38536e3a51f6e53c815bcddd42035ad,f38ccc3333cccc31
+data/dataset/red_spot/20211227_161533.jpg,5,red_spot,256,256,3112,True,False,True,True,38.159285984700546,151.70420837402344,23.208397535726306,True,False,False,True,True,,e07d97b275526ab4d1b53f9ec0d0906dc38536e3a51f6e53c815bcddd42035ad,f38ccc3333cccc31

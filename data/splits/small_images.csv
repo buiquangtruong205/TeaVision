@@ -1,1 +1,1 @@
-image_path,label,class_name,width,height,file_size,is_valid,is_small,is_exact_duplicate,is_phash_duplicate,error,file_hash,phash
+image_path,label,class_name,width,height,file_size,is_valid,is_small,is_exact_duplicate,is_phash_duplicate,blur_score,brightness_mean,contrast_std,is_blurry,is_too_dark,is_too_bright,is_low_contrast,is_low_quality,error,file_hash,phash

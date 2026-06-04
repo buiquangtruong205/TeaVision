@@ -1,0 +1,7 @@
+stt,class_name,total,blurry,too_bright,too_dark,low_contrast,low_quality,phash_duplicate,not_used,usable
+1,algal_spot,1072,0,2,0,0,2,72,74,998
+2,brown_blight,979,10,98,0,0,108,114,202,777
+3,gray_blight,1000,0,23,0,0,23,0,23,977
+4,healthy,1000,16,65,0,0,79,2,81,919
+5,helopeltis,1400,216,167,0,0,364,404,659,741
+6,red_spot,1403,63,45,0,2,106,406,485,918

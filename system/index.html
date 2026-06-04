@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="TeaVision - Nhận diện bệnh trên lá chè bằng trí tuệ nhân tạo." />
+    <title>TeaVision | Nhận diện bệnh lá chè</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/system/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48">
+              <path d="M39 8C22 9 11 16 9 31c7 6 19 6 27-3 6-7 5-15 3-20Z" />
+              <path d="M12 34c7-9 14-14 25-21" />
+            </svg>
+          </span>
+          <span>
+            <strong>TeaVision</strong>
+            <small>AI for healthier tea gardens</small>
+          </span>
+        </a>
+        <div class="server-status" id="serverStatus">
+          <span class="status-dot"></span>
+          <span>Đang kết nối mô hình...</span>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Tea leaf intelligence</p>
+            <h1>Nhận diện bệnh lá chè <span>nhanh và trực quan.</span></h1>
+            <p class="hero-description">
+              Tải ảnh lá chè lên để TeaVision khoanh vùng lá, phân loại bệnh và hiển thị
+              mức độ tin cậy của mô hình.
+            </p>
+            <div class="model-facts">
+              <div>
+                <strong id="modelAccuracy">87.75%</strong>
+                <span>Độ chính xác</span>
+              </div>
+              <div>
+                <strong id="modelClasses">6</strong>
+                <span>Nhóm bệnh</span>
+              </div>
+              <div>
+                <strong id="modelLatency">~2 ms</strong>
+                <span>Inference model</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="art-circle"></div>
+            <svg class="hero-leaf" viewBox="0 0 420 320">
+              <path class="leaf-fill" d="M360 42C194 45 73 110 58 261c89 39 207 12 271-74 49-65 44-117 31-145Z" />
+              <path class="leaf-vein" d="M67 271C146 178 233 113 348 57" />
+              <path class="leaf-vein thin" d="M135 202c-10-31-13-57-9-82M196 155c-3-31 2-58 11-81M254 115c8-26 19-47 34-65M139 202c32 0 62 7 88 21M197 155c38 0 72 8 103 24M255 114c33 1 63 8 88 22" />
+            </svg>
+          </div>
+        </section>
+
+        <section class="workspace">
+          <div class="panel upload-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="step-label">Bước 01</p>
+                <h2>Chọn ảnh lá chè</h2>
+              </div>
+              <button class="text-button" id="resetButton" type="button" hidden>Làm mới</button>
+            </div>
+
+            <label class="drop-zone" id="dropZone" for="fileInput">
+              <input id="fileInput" type="file" accept="image/*" />
+              <div class="drop-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 16V4m0 0L7 9m5-5 5 5M5 14v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4" />
+                </svg>
+              </div>
+              <strong>Kéo thả ảnh vào đây</strong>
+              <span>hoặc nhấn để chọn ảnh JPG, PNG</span>
+              <small>Dung lượng tối đa 10 MB</small>
+            </label>
+
+            <div class="preview-card" id="previewCard" hidden>
+              <img id="previewImage" alt="Ảnh lá chè đã chọn" />
+              <div class="preview-overlay">
+                <span id="fileName">leaf.jpg</span>
+                <span id="fileSize">0 KB</span>
+              </div>
+            </div>
+
+            <button class="primary-button" id="analyzeButton" type="button" disabled>
+              <span>Phân tích ảnh</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14m-6-6 6 6-6 6" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="panel result-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="step-label">Bước 02</p>
+                <h2>Kết quả phân tích</h2>
+              </div>
+              <span class="result-badge" id="resultBadge">Chờ ảnh</span>
+            </div>
+
+            <div class="empty-result" id="emptyResult">
+              <div class="scan-frame">
+                <span></span><span></span><span></span><span></span>
+                <svg viewBox="0 0 64 64" aria-hidden="true">
+                  <path d="M50 12C29 13 15 21 13 42c10 7 25 6 35-6 8-9 6-18 2-24Z" />
+                  <path d="M15 47c10-13 20-21 34-31" />
+                </svg>
+              </div>
+              <h3>Kết quả sẽ xuất hiện tại đây</h3>
+              <p>Hệ thống sẽ khoanh vùng lá và hiển thị dự đoán sau khi phân tích.</p>
+            </div>
+
+            <div class="loading-result" id="loadingResult" hidden>
+              <div class="loader"></div>
+              <h3>Đang phân tích lá chè...</h3>
+              <p>Mô hình đang xử lý ảnh và đánh giá các nhóm bệnh.</p>
+            </div>
+
+            <div class="analysis-result" id="analysisResult" hidden>
+              <div class="annotated-wrap">
+                <img id="annotatedImage" alt="Ảnh lá chè đã khoanh vùng" />
+              </div>
+              <div class="diagnosis">
+                <p class="diagnosis-label">Dự đoán chính</p>
+                <div class="diagnosis-title">
+                  <h3 id="diseaseName">Healthy</h3>
+                  <strong id="confidenceValue">0%</strong>
+                </div>
+                <div class="confidence-track">
+                  <span id="confidenceBar"></span>
+                </div>
+                <div class="meta-grid">
+                  <div>
+                    <span>Khoanh vùng lá</span>
+                    <strong id="leafDetected">-</strong>
+                  </div>
+                  <div>
+                    <span>Thời gian xử lý</span>
+                    <strong id="latencyValue">-</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="probability-section">
+                <h3>Xác suất theo nhóm bệnh</h3>
+                <div class="probability-list" id="probabilityList"></div>
+              </div>
+            </div>
+
+            <div class="error-result" id="errorResult" hidden>
+              <h3>Không thể phân tích ảnh</h3>
+              <p id="errorMessage">Vui lòng thử lại với một ảnh khác.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="disease-guide">
+          <div class="section-heading">
+            <p class="eyebrow">Phạm vi nhận diện</p>
+            <h2>Các nhóm bệnh TeaVision đang hỗ trợ</h2>
+          </div>
+          <div class="disease-grid" id="diseaseGrid"></div>
+        </section>
+      </main>
+
+      <footer>
+        <span>TeaVision</span>
+        <p>Mô hình hỗ trợ sàng lọc ban đầu, không thay thế đánh giá của chuyên gia nông nghiệp.</p>
+      </footer>
+    </div>
+    <script src="/system/script.js"></script>
+  </body>
+</html>

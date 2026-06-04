@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
-set -euo pipefail
+#!/usr/bin/env sh
 
-uvicorn src.deploy.api:app --host 0.0.0.0 --port 8000
+uvicorn src.deploy.api:app --host 0.0.0.0 --port "${PORT:-8000}"

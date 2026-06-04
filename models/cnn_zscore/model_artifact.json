@@ -1,0 +1,32 @@
+{
+  "artifact_type": "teavision_simple_cnn",
+  "checkpoint": "best_model.pt",
+  "architecture": "SimpleCNN",
+  "normalizer": "zscore",
+  "image_size": 128,
+  "input_format": "RGB float32 in [0, 1], resized with LANCZOS",
+  "class_names": [
+    "algal_spot",
+    "brown_blight",
+    "gray_blight",
+    "healthy",
+    "helopeltis",
+    "red_spot"
+  ],
+  "feature_dimension": 128,
+  "metrics": {
+    "normalizer": "zscore",
+    "model": "cnn",
+    "accuracy": 0.8775,
+    "precision_macro": 0.8747947914,
+    "recall_macro": 0.8740398047,
+    "f1_macro": 0.8737341853,
+    "precision_weighted": 0.8772512206,
+    "recall_weighted": 0.8775,
+    "f1_weighted": 0.8766220036,
+    "parameters": 2121638,
+    "gflops": 0.093849088,
+    "inference_time_ms": 1.958082125
+  },
+  "source_checkpoint": "reports\\cnn_zscore_regularization_tuning\\learned_tsne_model\\best_zscore_cnn.pt"
+}

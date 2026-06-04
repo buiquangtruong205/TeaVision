@@ -1,0 +1,434 @@
+[
+  {
+    "normalizer": "minmax",
+    "model": "knn",
+    "accuracy": 0.0,
+    "precision_macro": 0.0,
+    "recall_macro": 0.0,
+    "f1_macro": 0.0,
+    "precision_weighted": 0.0,
+    "recall_weighted": 0.0,
+    "f1_weighted": 0.0,
+    "parameters": 129024,
+    "gflops": null,
+    "inference_time_ms": 33.4330666664755,
+    "confusion_matrix": [
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "per_class": [
+      {
+        "class": "algal_spot",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 1.0
+      },
+      {
+        "class": "brown_blight",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 1.0
+      },
+      {
+        "class": "gray_blight",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 1.0
+      },
+      {
+        "class": "healthy",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 1.0
+      },
+      {
+        "class": "helopeltis",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 1.0
+      },
+      {
+        "class": "red_spot",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 1.0
+      }
+    ]
+  },
+  {
+    "normalizer": "minmax",
+    "model": "svm",
+    "accuracy": 0.5,
+    "precision_macro": 0.4166666666666667,
+    "recall_macro": 0.5,
+    "f1_macro": 0.4444444444444444,
+    "precision_weighted": 0.4166666666666667,
+    "recall_weighted": 0.5,
+    "f1_weighted": 0.4444444444444444,
+    "parameters": 18438,
+    "gflops": null,
+    "inference_time_ms": 0.041616666749177966,
+    "confusion_matrix": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "per_class": [
+      {
+        "class": "algal_spot",
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1_score": 0.6666666666666666,
+        "support": 1
+      },
+      {
+        "class": "brown_blight",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 1
+      },
+      {
+        "class": "gray_blight",
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 1
+      },
+      {
+        "class": "healthy",
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 1
+      },
+      {
+        "class": "helopeltis",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 1
+      },
+      {
+        "class": "red_spot",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 1
+      }
+    ]
+  },
+  {
+    "normalizer": "zscore",
+    "model": "knn",
+    "accuracy": 0.0,
+    "precision_macro": 0.0,
+    "recall_macro": 0.0,
+    "f1_macro": 0.0,
+    "precision_weighted": 0.0,
+    "recall_weighted": 0.0,
+    "f1_weighted": 0.0,
+    "parameters": 129024,
+    "gflops": null,
+    "inference_time_ms": 7.0280500000687125,
+    "confusion_matrix": [
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "per_class": [
+      {
+        "class": "algal_spot",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 1.0
+      },
+      {
+        "class": "brown_blight",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 1.0
+      },
+      {
+        "class": "gray_blight",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 1.0
+      },
+      {
+        "class": "healthy",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 1.0
+      },
+      {
+        "class": "helopeltis",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 1.0
+      },
+      {
+        "class": "red_spot",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 1.0
+      }
+    ]
+  },
+  {
+    "normalizer": "zscore",
+    "model": "svm",
+    "accuracy": 0.3333333333333333,
+    "precision_macro": 0.25,
+    "recall_macro": 0.3333333333333333,
+    "f1_macro": 0.27777777777777773,
+    "precision_weighted": 0.25,
+    "recall_weighted": 0.3333333333333333,
+    "f1_weighted": 0.27777777777777773,
+    "parameters": 18438,
+    "gflops": null,
+    "inference_time_ms": 0.03651666672036905,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "per_class": [
+      {
+        "class": "algal_spot",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 1
+      },
+      {
+        "class": "brown_blight",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 1
+      },
+      {
+        "class": "gray_blight",
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1_score": 0.6666666666666666,
+        "support": 1
+      },
+      {
+        "class": "healthy",
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 1
+      },
+      {
+        "class": "helopeltis",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 1
+      },
+      {
+        "class": "red_spot",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 1
+      }
+    ]
+  }
+]

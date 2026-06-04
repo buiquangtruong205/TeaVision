@@ -17,6 +17,19 @@ data:
   val_size: 0.15
   test_size: 0.15
 
+preprocessing:
+  normalize: true
+  min_size: 32
+  blur_threshold: 80.0
+  dark_threshold: 40.0
+  bright_threshold: 220.0
+  contrast_threshold: 25.0
+
+augmentation:
+  horizontal_flip: true
+  random_rotate: 10
+  color_jitter: true
+
 training:
   model_name: efficientnet_b0
   num_epochs: 20
